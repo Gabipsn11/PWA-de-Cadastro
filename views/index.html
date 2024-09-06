@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookstore PWA</title>
+    <link rel="stylesheet" href="/public/styles.css">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="icon" href="/public/icon-192.png" sizes="192x192" type="image/png">
+    <link rel="icon" href="/public/icon-512.png" sizes="512x512" type="image/png">
+</head>
+<body>
+    <header>
+        <img src="/public/icon-512.png" alt="Bookstore Logo" class="logo">
+        <h1>Bookstore</h1> 
+        <button onclick="window.open('livrarias-e-videos.html', '_blank')">Ver Livrarias e Vídeos</button>
+    </header>
+    <form id="book-form">
+        <input type="text" id="title" placeholder="Título do Livro" required>
+        <input type="text" id="author" placeholder="Autor" required>
+        <textarea id="description" placeholder="Descrição"></textarea>
+        <input type="url" id="coverUrl" placeholder="URL da Capa do Livro">
+        <button type="submit">Cadastrar Livro</button>
+    </form>
+
+    <h2>Lista de Livros</h2>
+    <ul id="book-list"></ul>
+</main>
+<script src="/public/app.js"></script>
+</body>
+</html>
